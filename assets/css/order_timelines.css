@@ -1,0 +1,45 @@
+/* ORDER TIMELINE */
+.timeline {
+  margin-top: 25px;
+  border-left: 3px solid #1f8b4c;
+  padding-left: 20px;
+}
+
+.timeline-step {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.timeline-step::before {
+  content: "";
+  position: absolute;
+  left: -11px;
+  top: 4px;
+  width: 16px;
+  height: 16px;
+  background: #1f8b4c;
+  border-radius: 50%;
+}
+
+.timeline-step.pending::before {
+  background: #f39c12;
+}
+
+.timeline-step.cancelled::before {
+  background: #e74c3c;
+}
+
+.timeline-step h4 {
+  margin: 0;
+  font-size: 15px;
+  color: #333;
+}
+
+.timeline-step span {
+  font-size: 13px;
+  color: #777;
+}
+.timeline{border-left:4px solid #1f8b4c;padding-left:15px}
+.step{margin-bottom:15px}
+.step.done{color:#1f8b4c}
+.step.pending{color:#aaa}
